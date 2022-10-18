@@ -11,9 +11,11 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
         val email = intent.getStringExtra("ekey")
         val textView = findViewById<TextView>(R.id.tvEmail)
         val message = "You are signed in as, $email ;-) "
         textView.text=message
+
     }
 }
